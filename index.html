@@ -1,0 +1,193 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon"  href="images/logo.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <title>Flowery shop</title>  
+</head>  
+<body>  
+    <header class="mainhead">  
+        <img src="images/logo.jpg"  class="logo">
+       
+       <div class="hhh" > 
+        <h1>
+            Flowery Shop
+        </h1>
+    </div>
+    <div class="navi">
+        <nav>
+            <ul>
+                <li><a href="#index" class="name">Home</a></li>
+                <li><a href="#product" class="name">Product</a></li>
+                <li><a href="#contact"class="name">Contact </a></li>
+            </ul>
+        </nav>
+    </div>
+        <img src="images/logo.jpg" class="logo">
+    </header> 
+        <section id="index">
+            <h1>
+                Home
+            </h1>
+            <div class="second">
+            <p>Bring Joy Home—Buy Fresh Flowers Today!</p>
+            <img src="images\roman-kraft-_oH66az_yug-unsplash.jpg" class="main">
+            </div>
+        </section>
+        <div class="others">
+        <section id="product">
+            <h1>
+                Product
+            </h1>
+ <div class="flower-container">          
+<div class="daisy">
+            <img src="images/ezgi-deliklitas-HWgDWhZ4Orw-unsplash.jpg">
+    <div class="content">
+            <h2>
+                Daisy
+            </h2>
+            <p>
+                For your innocent and beloved friend
+            </p>
+            <p>
+                <span class=birr>50ETB</span> per piece
+            </p>
+            <h4>
+                <a href="#">order now</a>
+            </h4>
+    </div>
+</div>
+   <div class="rose">
+         <img src="images\paula-hayes-HSdModpz1lU-unsplash.jpg">
+        <div class="content">
+            <h2>
+               Rose
+            </h2>
+            <p>
+                Falling in love
+            </p>
+            <p>
+                <span class=birr>30ETB</span> per piece
+            </p>
+            <h4>
+                <a href="#">order now</a>
+            </h4>
+        </div>
+    </div> 
+    <div class="tulip">          
+            <img src="images/Spring_Tulips_1.webp">
+            <div class="content">
+                <h2>
+                   Tulip
+                </h2>
+                <p>
+                    For your cheerful memories & wishes   
+                </p>
+                <p>
+                    <span class=birr>80ETB</span> per piece
+                </p>
+                <h4>
+                    <a href="#">order now</a>
+                </h4>
+            </div>
+    </div> 
+    <div class="lily">               
+            <img src="images\alexandra-gorn-WHHfP1HftMg-unsplash.jpg">
+            <div class="content">
+                    <h2>
+                       Lily
+                    </h2>
+                    <p>
+                        For your great friendship
+                    </p>
+                    <p>
+                        <span class=birr>70ETB</span> per piece
+                    </p>
+                    <h4>
+                        <a href="#">order now</a>
+                    </h4>
+                    </div> 
+        </div>
+    </div>
+        <div class="quote">
+           <p>Flowers speak louder than words...</p>
+        </div>
+    </section>
+    <section class="contact-us" id="contact">
+        <h1>
+        Contact
+       </h1> 
+       <div class="third-page">
+    <p>
+        Phone.No +251972124356
+    </p>
+    <p>
+        Email: flowerdeliveryshop@gmail.com
+    </p>
+    <p>
+        Telegram: @floweryshop
+    </p>
+</div> 
+<div class="textbox">
+    <h2> Give us a feedback</h2>
+   <textarea id="text"required="required" placeholder="Type what you feel about us..." maxlength="500"></textarea>
+</div> 
+<div class="input-button">
+    <input type="submit" name="button" value="Send">
+</div>
+</section>
+<footer>
+    <div class="footer-part">
+      <p>&copy; 2025 Flowery Shop. All Rights Reserved.</p>
+    </div>
+  </footer>  
+   </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log("Script loaded!"); // Debugging
+        const menu = document.querySelector('.mainhead');
+        if (!menu) {
+            console.error("Element with class 'mainhead' not found.");
+            return;
+        }
+        
+        window.addEventListener('scroll', () => {
+            console.log("Scroll position:", window.scrollY); // Debugging
+            if (window.scrollY > 50) {
+                menu.classList.add('scrolled');
+            } else {
+                menu.classList.remove('scrolled');
+            }
+        });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+    // Select all menu items with the class 'name'
+    const menuItems = document.querySelectorAll('.name');
+
+    // Loop through each menu item and add event listeners
+    menuItems.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.style.color = "white"; // Change text color
+            item.style.backgroundColor = "rgba(101, 83, 117, 0.2)"; // Light background
+            item.style.padding = "5px"; // Add some padding
+            item.style.borderRadius = "5px"; // Smooth edges
+        });
+
+        item.addEventListener('mouseout', () => {
+            item.style.color = "black"; // Revert text color
+            item.style.backgroundColor = "transparent"; // Remove background
+            item.style.padding = "0px"; // Reset padding
+            item.style.borderRadius = "0px"; // Reset border radius
+        });
+    });
+});
+
+</script>
+
+  
+    </body>
+    </html>

@@ -1,0 +1,275 @@
+body{
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden; 
+    background-color: rgb(248, 244, 240);
+}
+
+div{
+    float: left;
+}
+.mainhead{
+    width: 100%;
+    display:flex;
+    transition: background-color 0.3s ease;
+    background-color:#e7e7e4 ;
+    position: fixed;
+    top:0px;
+    margin-top: 0px;
+    z-index: 1000;
+}
+.hhh{
+    margin-left:10px;
+    margin-top:0px;
+    font-size:medium;
+    font-weight: bold;
+}
+.navi{
+    width:auto;
+    color: black;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+li{
+    display: inline;
+    margin-left: 5px;
+}
+.logo{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.name{
+    color:black;
+    text-decoration: none;
+    font-size: medium;
+    
+}
+header{
+    border:0px solid white ;
+    margin:0px;
+}
+#header{
+   position: absolute;
+   top:100px;
+}
+#index h1{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.second {
+    display: flex;
+    align-items: center;
+    gap:15px;
+    border: 5px solid rgb(225, 205, 198);
+    border-radius: 15px;
+    margin: 20px;
+   width:auto;
+}
+.second img{
+    width:65vw;
+    height:fit-content;
+    flex-shrink: 0;
+    border:5px solid transparent;
+    border-radius: 15px;
+
+}
+.second p{
+    font-size:5vw;
+    line-height: 1;
+    margin-left: 15px;
+    font-family: 'Italianno', cursive;
+}
+.others h1{
+    margin-left:30px;
+    margin-top: 60px;
+}
+.daisy, .rose, .tulip, .lily{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:20px;
+    margin-left: 20px;
+    border:5px solid transparent;
+    border-radius: 15px;
+}
+
+.daisy img{
+    border: 5px solid rgb(225, 205, 198);
+    border-radius: 15px;
+}
+.rose img{
+    border: 5px solid rgb(225, 205, 198);
+    border-radius: 15px; 
+}
+.tulip img{
+    border: 5px solid rgb(225, 205, 198);
+    border-radius: 15px;
+}
+.lily img{
+    border: 5px solid rgb(225, 205, 198);
+    border-radius: 15px;
+}
+
+.content{
+    padding: 20px;
+    text-align: left;
+}
+h4{
+    border :5px solid rgb(225, 205, 198);
+    background-color: rgb(225, 205, 198);
+    width:max-content;
+    border-radius: 10px;
+}
+h4 a{
+    text-decoration: none;
+    color:black;
+}
+h4 a:hover{
+    border: 5px groove transparent;
+    color:white;
+}
+.contact-us{
+    clear:left;
+}
+.birr{
+    color:rgb(7, 163, 7);
+    font-weight: bold;
+}
+.quote{
+    clear:left;
+    font-family: 'Italianno', cursive;
+    font-size: 40px;
+    width:40vw;
+    position: relative;
+    left:50%;
+    right:50%;
+}
+footer{
+    clear:left;
+    border: 0px solid rgb(225, 205, 198);
+    background-color:rgb(225, 205, 198) ;
+}
+.third-page{
+    margin-left:20px;
+    font-size: x-large;
+}
+.textbox
+{
+clear: left;
+margin-left: 30px;
+margin-bottom: 30px;
+}
+.footer-part{
+    border: 0px solid rgb(225, 205, 198);
+    background-color:rgb(225, 205, 198) ;  
+    width: 100vw;
+    padding:auto ;
+    height:100px;
+    margin-left: 0px;
+    position: absolute;
+    left:0px;
+}
+.footer-part p{
+  margin-top:40px;
+  font-size: larger; 
+  font-family: 'Times New Roman', Times, serif;
+  width:350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+textarea{
+    height:80px;
+    width:50vw;
+   
+}
+
+#charCount{
+    clear:left;
+}
+.input-button{
+   margin-left: 50vw;
+   margin-bottom: 20px;
+    clear: left;
+}
+button, input[type="submit"]{
+    background-color:rgb(225, 205, 198);
+    border-radius: 15px;
+    border: 2px solid rgb(225, 205, 198);
+    width: 100px;
+    height:50px;
+    font-size:large;
+}
+input[type="submit"]:hover {
+    border: 30px none rgb(225, 205, 198) ;
+    color:white;
+    box-shadow: 0 0 20px rgba(225, 205, 198, 0.7);
+}
+.mainhead.scrolled{
+    background-color: rgb(225, 205, 198);
+    color:antiquewhite
+}
+@media(min-width: 768px){
+    img{
+        width:400px;
+        height:350px;
+    } 
+    .second img{
+        width:40vw;
+        height:max-content;
+    }
+   
+}
+@media(max-width:768px){
+    img{
+        width:200px;
+        height:250px;
+    }
+    #index h1{
+        margin-top: 120px;
+    }
+    .navi{
+        width:max-content
+    }
+    .third-page{
+        margin-left:20px;
+        font-size:medium;
+    }
+    .textbox{
+        font-size:15px;
+    }
+.logo{
+    margin-top: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    img{
+        width:300px;
+        height:250px;
+        min-width: none;
+    }
+    .li{
+        width:50px;
+        margin-right:200px;
+    }
+}
+@media (min-width: 1480px) {
+   .daisy img{
+        margin-left:210px ;
+        margin-bottom: 30px;
+    }
+    .tulip img{
+        margin-left:210px ; 
+    }
+    .navi{
+        width:auto;
+        margin-right:200px;
+        padding-right: 30px;
+    }
+}
+
+
