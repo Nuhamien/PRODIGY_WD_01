@@ -259,11 +259,16 @@ input[type="submit"]:hover {
 }
 @media (min-width: 1480px) {
    .daisy img{
-        margin-left:210px ;
-        margin-bottom: 30px;
+        margin-left:100px ;
     }
     .tulip img{
-        margin-left:210px ; 
+        margin-left:100px ; 
+    }
+    .rose img{
+        margin-left:100px ;
+    }
+    .lily img{
+        margin-left:100px ;
     }
     .navi{
         width:auto;
